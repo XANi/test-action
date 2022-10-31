@@ -9,7 +9,7 @@ jobs:
     build:
       runs-on: ubuntu-latest
       steps:
-      - run: ./build.sh
+      - run: ls
         name: Build
       - uses: ncipollo/release-action@v1
         name: Release

@@ -5,10 +5,11 @@ on:
   push:
     branches:
     - master
-
 jobs:
   build:
     runs-on: ubuntu-latest
-      steps:
-        - run: ls
-          name: Build
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - run: ls
+        name: Build

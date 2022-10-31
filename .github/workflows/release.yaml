@@ -21,4 +21,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           artifacts: "bin/*"
-          bodyFile: "body.md"
+          body:  ${{ github.event.head_commit.message }}

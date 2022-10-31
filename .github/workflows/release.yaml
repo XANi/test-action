@@ -11,7 +11,7 @@ jobs:
       steps:
       - name: Check out repository code
         uses: actions/checkout@v3
-      - run: ls
+      - run: ./build.sh
         name: Build
       - uses: ncipollo/release-action@v1
         name: Release
